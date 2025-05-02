@@ -12,12 +12,48 @@ A computer vision-based posture screening tool that uses **MediaPipe Pose** and 
 - 🤖 WhatsApp Bot: *Integration in progress*
 
 ---
-💡 Key Features
-✅ Detects Knock Knees, Bow Legs, Shoulder Droop, Spinal Curves
 
-📸 Accepts image or video input
+## 📌 Problem Statement
 
-📊 Generates visual + PDF reports
+Postural deformities often go unnoticed until they affect health or disqualify candidates from competitive exams such as army or police recruitment. Current posture analysis tools are:
+- Manual and time-consuming
+- Expensive or inaccessible
+- Lacking in early detection capabilities
+
+---
+
+## ✅ Proposed Solution
+
+This system automates posture detection using **MediaPipe Pose** to identify key body landmarks. It generates:
+- Human-readable posture reports
+- Deviation analysis for knees, spine, shoulders, hips
+- Visualizations & PDF exports
+- Corrective recommendations
+
+Accessible through:
+- Web & mobile apps
+- Telegram & WhatsApp bots
+
+---
+
+## 🧠 How It Works
+
+1. **Upload Image/Video** or capture via webcam.
+2. **Landmark Detection** using MediaPipe Pose.
+3. **Analysis Engine** checks joint angles, symmetry, and alignment.
+4. **Report Generation** with visual feedback and tips.
+
+---
+
+## 🏗️ Project Workflow
+
+```mermaid
+graph TD
+A[Input Image/Video] --> B[MediaPipe Pose Landmark Detection]
+B --> C[Feature Extraction (angles, symmetry)]
+C --> D[Deviation Analysis]
+D --> E[Posture Classification]
+E --> F[Report Generation & Recommendations]
 
 🤖 Telegram/WhatsApp chatbot support
 
