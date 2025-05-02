@@ -47,10 +47,4 @@ Accessible through:
 
 ## 🏗️ Project Workflow
 
-```mermaid
-graph TD
-A[Input Image/Video] --> B[MediaPipe Pose Landmark Detection]
-B --> C[Feature Extraction (angles, symmetry)]
-C --> D[Deviation Analysis]
-D --> E[Posture Classification]
-E --> F[Report Generation & Recommendations]
+
